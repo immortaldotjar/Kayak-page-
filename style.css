@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "Blinker", sans-serif;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+
+.navigation {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav ul li i {
+    color: black;
+}
+
+
+.fa-regular {
+    margin: 0px 10px 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.button:hover {
+    background-color: rgb(255, 98, 0);
+    color: white;
+    transition: .5s;
+}
+
+.button:hover i {
+    color: white;
+    transition: .5s;
+}
+
+.button:hover a {
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.fa-heart:hover {
+    color: rgb(255, 5, 130);
+    transform: scale(1.5, 1.5);
+    transition: .5s;
+    animation: heart 1s ease infinite alternate;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(0.8);
+    }
+
+    25% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    75% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+nav ul li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px
+}
+
+nav ul li:nth-child(2) {
+    margin: 0 auto 0 0;
+}
+
+li:last-child {
+    font-weight: 600;
+    border: thin solid black;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+}
+
+.body {
+    background-color: rgb(255, 255, 255);
+    height: 80%;
+    width: 100%;
+    padding: 10px;
+}
+
+/* .main {
+    height: 40%;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+
+    overflow: auto;
+} */
+
+.content {
+    height: 290px;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #f0f3f5, rgba(255, 255, 255, 0.982));
+    padding: 30px 0px 0px 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+h2 {
+    padding: 10px;
+    font-size: xx-large;
+}
+
+span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 98, 0);
+    font-size: 30px;
+}
+
+.switch ul {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 50px;
+    list-style: none;
+    position: relative;
+}
+
+.switch p {
+    position: absolute;
+    bottom: -25px;
+    font-size: small;
+}
+
+.switch .list {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgb(189, 189, 189);
+}
+
+.switch li a i {
+    color: black;
+}
+
+input {
+    height: 50px;
+    width: 600px;
+    padding: 0px 0px 0px 20px;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    border: none;
+    box-shadow: 0px 5px 10px lightgrey;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid lightgrey;
+}
+
+.section {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    column-gap: 10px;
+    padding: 30px;
+}
+
+.insection {
+    height: 140px;
+    width: calc(100% / 3);
+    background-color: white;
+    border: thin solid rgb(206, 206, 206);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.logo,
+.user {
+    position: relative;
+}
+
+.logo div {
+    height: 46px;
+    width: 46px;
+    border-radius: 50px;
+    border: 1px solid #dadbdc;
+    background-color: #f0f3f5;
+    background-size: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sectionlogo1 {
+    background-image: url(./images/AGODA.png);
+    position: absolute;
+    left: 0;
+}
+
+.sectionlogo2 {
+    background-image: url(./images/HYATT.png);
+    position: absolute;
+    left: 35px
+}
+
+.sectionlogo3 {
+    background-image: url(./images/HILTON.png);
+    position: absolute;
+    left: 70px
+}
+
+.sectionlogo4 {
+    background-image: url(./images/BOOKINGDOTCOM.png);
+    position: absolute;
+    left: 105px
+}
+
+.sectionlogo5 {
+    background-image: url(./images/MARRIOTT.png);
+    position: absolute;
+    left: 140px;
+}
+
+.user div {
+    height: 46px;
+    width: 46px;
+    border-radius: 50px;
+    border: 1px solid #dadbdc;
+    background-color: #f0f3f5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.userlogo1 {
+    background-image: url(./images/avatar-1.png);
+    position: absolute;
+    left: 0;
+}
+
+.userlogo2 {
+    background-image: url(./images/avatar-2.png);
+    position: absolute;
+    left: 35px
+}
+
+.userlogo3 {
+    background-image: url(./images/avatar-3.png);
+    position: absolute;
+    left: 70px
+}
+
+
+
+h6 {
+    font-weight: normal;
+}
+
+.one {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    position: absolute;
+    left: 5px;
+    top: -20px;
+}
+
+.two {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    position: absolute;
+    left: 5px;
+    top: 100px;
+}
+
+.three {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    position: absolute;
+    left: 5px;
+    top: -20px;
+
+}
+
+.section-content {
+    font-size: 20px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.rating {
+    color: rgb(255, 194, 40);
+}
+
+.secondchild a{
+    display: flex;
+    column-gap: 1px;
+    font-weight: bold;
+
+}
+
+.secondchild a div{
+    color: white;
+    display: flex;
+    background-color: rgb(255, 98, 0);
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch li:hover {
+    background: rgb(255, 98, 0);
+    transform: scale(1.1, 1.1);
+    transition: .5s ease;
+}
+
+.switch li:hover i {
+    color: white;
+}
+
+.images {
+    position: absolute;
+    height: 100%;
+    width: 300px;
+    background-color: transparent;
+    right: -80px;
+    top: 0px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.left,
+.right {
+    background-color: transparent;
+    height: 100%;
+    width: 50%;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+
+}
+
+.left img {
+    height: 120px;
+    width: 120px;
+    translate: 0 30px;
+}
+
+.right img {
+    height: 120px;
+    width: 120px;
+    translate: 0 -30px;
+}
